@@ -1,0 +1,9 @@
+<view class="pageTopBar">
+  <!-- 城市选择 -->
+  <view class="typeTabFrame">
+    <view class="tab {{released?'select':''}}" data-released="true" bindtap="eventChangeReleased">正在热映</view>
+    <view class="tab {{!released?'select':''}}" data-released="false" bindtap="eventChangeReleased">即将上映</view>
+    <view class="blockLine" style="left:calc({{tabBlockLengthLeft}}% - 25%);"></view>
+  </view>
+  <!-- 搜索 -->
+</view>
